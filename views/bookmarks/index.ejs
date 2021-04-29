@@ -7,6 +7,10 @@
     <title>Bookmarks</title>
 </head>
 <body>
-    <h1>Hello!</h1>
+    <div id='bookmarks'>
+        <% bookmarks.map(bookmark=>{%>
+        <p><%= bookmark.url %></p>
+        <%})%>
+    </div>
 </body>
 </html>
