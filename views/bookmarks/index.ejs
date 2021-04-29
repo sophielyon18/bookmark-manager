@@ -8,6 +8,11 @@
 </head>
 <body>
     <div id='bookmarks'>
+    <h1>Bookmarks</h1>
+    <form action="/bookmarks" method="post">
+        <input type="text" id="url" name="url" placeholder="www.example.com">
+        <input type="submit" id="submit-bookmarks" name="submit-bookmarks" value="Submit">
+    </form>
         <% bookmarks.map(bookmark=>{%>
         <p><%= bookmark.url %></p>
         <%})%>
